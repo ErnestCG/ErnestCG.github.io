@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Click Tester</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 75px;
+        }
+        #click-area, #right-click-area {
+            width: 300px;
+            height: 300px;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            cursor: pointer;
+        }
+        #click-count, #right-click-count {
+            font-size: 24px;
+        }
+        .label {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .home-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mouse Click Tester</h1>
+    <div class="container">
+        <div id="click-area">
+            <span id="click-count">0</span>
+        </div>
+        <div class="label">Left Click</div>
+    </div>
+    <div class="container">
+        <div id="right-click-area">
+            <span id="right-click-count">0</span>
+        </div>
+        <div class="label">Right Click</div>
+    </div>
+    <a href="index.html" class="home-button">Home</a>
+    <script>
+        const clickArea = document.getElementById('click-area');
+        const clickCount = document.getElementById('click-count');
+        let count = 0;
+
+        clickArea.addEventListener('click', () => {
+            count++;
+            clickCount.textContent = count;
+        });
+
+        const rightClickArea = document.getElementById('right-click-area');
+        const rightClickCount = document.getElementById('right-click-count');
+        let rightCount = 0;
+
+        rightClickArea.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            rightCount++;
+            rightClickCount.textContent = rightCount;
+        });
+    </script>
+</body>
+</html>

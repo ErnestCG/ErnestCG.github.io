@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .title {
+            margin-top: 10px; /* Adjust as needed */
+            color: white; /* Adjust color as needed */
+            font-size: 75px; /* Adjust font size as needed */
+            font-weight: bold;
+            text-align: center;
+        }
+        .home-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: white;
+            border-radius: 5px;
+        }
+        .portrait {
+            width: 400px;
+            height: auto;
+        }
+        .content {
+            font-size: 30px;
+            color: white;
+            text-align: justify;
+            margin-top: 20px; /* Adjust as needed */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; /* Adjust as needed */
+            padding: 10px;
+            width: fit-content;
+            height: auto;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            scrollbar-width: none; /* For Firefox */
+            -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+        }
+
+        .container::-webkit-scrollbar {
+            display: none; /* For Chrome, Safari, and Opera */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="title">About Me</div>
+        <img src="portrait.jpg" alt="Portrait" class="portrait">
+        <div class="content">
+            I am a shiftee from 4 years of nursing, finding refuge in computer science. And so far,<br>
+            I am doing much much better. I like it better here, and I have no plans of leaving.<br>
+            <br>
+            In the short time I've been exposed to computer science, I have 3 interests in the field namely:
+            <ul>
+                <li>Image Processing</li>
+                <li>Simulations</li>
+                <li>Electronics</li>
+            </ul>
+            <br>
+            A bit about the website:<br>
+            This was a direct result of a 48 hour Copilot assisted hackathon (born from procrastination) to make<br>
+            a website from scratch instead of on Google Sites. Although I am quite pleased with how it turned out,<br>
+            I didn't really learn a lot about HTML, CSS, and JS, besides a few basic things here and there.<br>
+            So if I ever get the chance to remake the website in a future subject, I would do it all manually then.<br>
+            <br>
+            Also maybe make the home page force you to play a game of breakout to access menu options.
+        </div>
+    </div>
+    <a href="index.html" class="home-button">Home</a>
+    </div>
+
+</body>
+</html>

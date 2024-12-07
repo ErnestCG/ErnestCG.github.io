@@ -1,0 +1,37 @@
+body {
+    background-color: #111112;
+    overflow: hidden; /* Prevent scrollbars */
+    margin: 10;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+.disclaimer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+.stationary-text {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Adjust color as needed */
+    font-size: 24px; /* Adjust font size as needed */
+}
+.bouncing-element {
+    position: absolute;
+    width: auto; /* Adjust size as needed */
+    height: auto; /* Adjust size as needed */
+    font-size: 30px;
+}
+
+h1, p {
+    position: relative;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 500px;
+            font-weight: bold;
+            position: relative;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+        }
+        .small-text {
+            font-size: 100px;
+            font-weight: normal;
+            margin-bottom: -100px; /* Adjust this value as needed */
+            font-weight: bold;
+        }
+        .bottom-text {
+            font-size: 20px;
+            font-weight: normal;
+            position: absolute;
+            bottom: 10px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .home-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="small-text">PLEASE</div>
+    DON'T
+    <div class="bottom-text" onclick="showPopup()">but if you really want to :(</div>
+    <a href="index.html" class="home-button">Home</a>
+    <script>
+        function showPopup() {
+            alert('elg3980@students.uc-bcf.edu.ph');
+        }
+    </script>
+</body>
+</html>
